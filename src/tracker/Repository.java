@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Repository {
 
-    public List<Expense> expenseList = new ArrayList();
-    public List<Category> catList = new ArrayList();
+    public List<Expense> expenseList = new ArrayList<>();
+    public List<Category> catList = new ArrayList<>();
     public static Repository repository;
 
     public Repository(List<Expense> expenseList, List<Category> catList) {
