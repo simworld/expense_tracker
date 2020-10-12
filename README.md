@@ -1,1 +1,1 @@
-A simple expenses tracker in Java
+A simple expenses tracker
