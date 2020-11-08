@@ -45,6 +45,7 @@ public class Start {
 
         Menu menu = new Menu();
 
+
         while (true) {
             menu.printMenu();
             choice = scanner.nextInt();
