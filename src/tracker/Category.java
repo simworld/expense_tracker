@@ -4,8 +4,7 @@ import java.io.*;
 
 
 public class Category {
-
-    private Long categoryId = System.currentTimeMillis();
+    UUID categoryId = java.util.UUID.randomUUID();
     private String name;
 
     public Category() {
@@ -15,22 +14,26 @@ public class Category {
     public Category(String name){
         this.name = name;
     }
-    public Category(Long categoryId, String name){
+
+
+    public Category(UUID categoryId, String name) {
         this.categoryId = categoryId;
         this.name = name;
     }
 
-    public Long getCategoryId() {
+    public UUID getCategoryId() {
         return categoryId;
+    }
+
+    public void setCategoryId(UUID categoryId) {
+        this.categoryId = categoryId;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
+
 
     public void setName(String name) {
         this.name = name;

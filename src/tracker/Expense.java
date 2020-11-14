@@ -2,12 +2,14 @@ package tracker;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.UUID;
 
 public class Expense {
 
     private Long expenseId = System.currentTimeMillis();
-    private Long categoryId;
+    private UUID categoryId;
     private String name;
+    private Date date;
 
     private Double amount;
 
@@ -15,10 +17,20 @@ public class Expense {
     public Expense() {
     }
 
-    public Expense(Long categoryId, String name, Double amount) {
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Expense(UUID categoryId, String name, Double amount, Date date) {
         this.categoryId = categoryId;
         this.name = name;
         this.amount = amount;
+        this.date = date;
 
     }
 
@@ -50,11 +62,11 @@ public class Expense {
     }
 
 
-    public Long getCategoryId() {
+    public UUID getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(Long categoryId) {
+    public void setCategoryId(UUID categoryId) {
         this.categoryId = categoryId;
     }
 }
