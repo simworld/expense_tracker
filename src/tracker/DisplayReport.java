@@ -17,35 +17,35 @@ public class DisplayReport {
     public void display(){
         menu.printCategories();
         choice = scanner.nextInt();
-        Double tot = 0.0;
+        double tot = 0.0;
         switch (choice) {
-            case 1:
-                for (Expense eliste : elist){
-                    if(eliste.getName() == "Home"){
-                        System.out.println("Category:" + eliste.getName() + "\n" + "Amount:" + eliste.getAmount() + "\n" + "Category ID:" + eliste.getCategoryId() + "\n" + "Expense ID:" + eliste.getExpenseId() + "\n" + "Date:" + eliste.getDate() + "\n");
-                        tot = tot + eliste.getAmount();
-                    }
-                }
-                System.out.println("Total: " + tot);
-                break;
-            case 2:
+            case 1 -> {
                 for (Expense eliste : elist) {
-                    if (eliste.getName() == "Car") {
+                    if (eliste.getName().equals("Home")) {
                         System.out.println("Category:" + eliste.getName() + "\n" + "Amount:" + eliste.getAmount() + "\n" + "Category ID:" + eliste.getCategoryId() + "\n" + "Expense ID:" + eliste.getExpenseId() + "\n" + "Date:" + eliste.getDate() + "\n");
                         tot = tot + eliste.getAmount();
                     }
                 }
                 System.out.println("Total: " + tot);
-                break;
-            case 3:
+            }
+            case 2 -> {
                 for (Expense eliste : elist) {
-                    if (eliste.getName() == "Shopping") {
+                    if (eliste.getName().equals("Car")) {
                         System.out.println("Category:" + eliste.getName() + "\n" + "Amount:" + eliste.getAmount() + "\n" + "Category ID:" + eliste.getCategoryId() + "\n" + "Expense ID:" + eliste.getExpenseId() + "\n" + "Date:" + eliste.getDate() + "\n");
                         tot = tot + eliste.getAmount();
                     }
                 }
                 System.out.println("Total: " + tot);
-                break;
+            }
+            case 3 -> {
+                for (Expense eliste : elist) {
+                    if (eliste.getName().equals("Shopping")) {
+                        System.out.println("Category:" + eliste.getName() + "\n" + "Amount:" + eliste.getAmount() + "\n" + "Category ID:" + eliste.getCategoryId() + "\n" + "Expense ID:" + eliste.getExpenseId() + "\n" + "Date:" + eliste.getDate() + "\n");
+                        tot = tot + eliste.getAmount();
+                    }
+                }
+                System.out.println("Total: " + tot);
+            }
         }
 
         }
