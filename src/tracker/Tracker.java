@@ -35,9 +35,9 @@ public class Tracker {
         }
     }
 
-    public static void displayReport(){
-
-    }
+//    public static void displayReport(){
+//
+//    }
 
     public static void createCategories() {
         Category cat = new Category(UUID.randomUUID(), "Home");

@@ -15,24 +15,24 @@ public class Repository {
         this.catList = catList;
     }
 
-    public Repository(Category cat1, Expense ex1) {
-    }
+//    public Repository(Category cat1, Expense ex1) {
+//    }
 
     public List<Expense> getExpenseList() {
         return expenseList;
     }
 
-    public void setExpenseList(List<Expense> expenseList) {
-        this.expenseList = expenseList;
-    }
+//    public void setExpenseList(List<Expense> expenseList) {
+//        this.expenseList = expenseList;
+//    }
 
     public List<Category> getCatList() {
         return catList;
     }
 
-    public void setCatList(List<Category> catList) {
-        this.catList = catList;
-    }
+//    public void setCatList(List<Category> catList) {
+//        this.catList = catList;
+//    }
 
     private Repository(){
     }

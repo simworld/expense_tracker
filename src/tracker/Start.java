@@ -27,17 +27,17 @@ public class Start {
                 case 1:
                     Tracker.showCategory();
                     break;
-                case 3:
+                case 6:
                     Tracker.saveToFile();
                     break;
-                case 4:
+                case 5:
                     Tracker.openFile();
                     break;
-                case 5:
+                case 4:
 //                    Tracker.displayReport();
                     dis.display();
                     break;
-                case 6:
+                case 3:
                     Tracker.showExpense();
                     break;
                 case 2:

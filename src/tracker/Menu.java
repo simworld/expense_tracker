@@ -9,10 +9,10 @@ public class Menu {
         System.out.println(date.toString());
         System.out.println("1. Shows Categories");
         System.out.println("2. Add Expense");
-        System.out.println("3. Save to file");
-        System.out.println("4. Open file");
-        System.out.println("5. Display Report");
-        System.out.println("6. Display Expenses");
+        System.out.println("3. Display Expenses");
+        System.out.println("4. Display Report");
+        System.out.println("5. Open file");
+        System.out.println("6. Save to file");
         System.out.println("0. Exit");
     }
 
